@@ -2947,34 +2947,31 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const heading1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "title1",
-    children: "heading1"
-}, "t1", false, {
-    fileName: "App.js",
-    lineNumber: 3,
-    columnNumber: 18
-}, undefined);
-const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "title2",
-    children: "heading2"
-}, "t2", false, {
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "my first functional component"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 4,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponent;
+const container = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined)
+}, void 0, false, {
     fileName: "App.js",
     lineNumber: 6,
-    columnNumber: 18
-}, undefined);
-const container = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-    children: [
-        heading1,
-        heading2
-    ]
-}, void 0, true, {
-    fileName: "App.js",
-    lineNumber: 9,
     columnNumber: 19
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(container);
+root.render(container); //root.render(<headerComponent />)
+var _c;
+$RefreshReg$(_c, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
