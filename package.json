@@ -28,6 +28,7 @@
     "last two crome versions"
   ],
   "devDependencies": {
+    "@babel/core": "^7.23.0",
     "babel-plugin-transform-remove-console": "^6.9.4"
   }
 }
