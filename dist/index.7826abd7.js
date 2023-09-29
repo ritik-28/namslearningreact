@@ -2947,29 +2947,48 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    id: "heading1",
+    children: "ritik heading element not component"
+}, "h1", false, {
+    fileName: "App.js",
+    lineNumber: 3,
+    columnNumber: 17
+}, undefined);
 const HeaderComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "my first functional component"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 4,
+        lineNumber: 7,
         columnNumber: 10
     }, undefined);
 };
 _c = HeaderComponent;
 const container = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 7,
-        columnNumber: 5
-    }, undefined)
-}, void 0, false, {
+    children: [
+        heading,
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            children: "this is my h2"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 11,
+            columnNumber: 5
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 12,
+            columnNumber: 5
+        }, undefined)
+    ]
+}, void 0, true, {
     fileName: "App.js",
-    lineNumber: 6,
+    lineNumber: 9,
     columnNumber: 19
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(container); //root.render(<headerComponent />)
+root.render(container); //root.render(<HeaderComponent />)
+ //root.render({HeaderComponent()})
 var _c;
 $RefreshReg$(_c, "HeaderComponent");
 
