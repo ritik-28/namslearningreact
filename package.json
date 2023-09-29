@@ -1,0 +1,25 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritik-28/namslearningreact.git"
+  },
+  "author": "ritik tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritik-28/namslearningreact/issues"
+  },
+  "homepage": "https://github.com/ritik-28/namslearningreact#readme",
+  "dependencies": {
+    "node": "^20.7.0",
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
