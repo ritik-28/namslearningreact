@@ -6,16 +6,10 @@
     <title>Reactjs learning</title>
   </head>
   <body>
-    //2. we have made "root" our react root but it does not mean we can not use
-    any other portion of code
-    <div id="header"></div>
-    //1. this will be our react root,because we have made this our react root
-    <div id="root"></div>
-    //3. it means that we can use react for a perticular place in our existing
-    app also //4. but most of the time we will only have div root because we
-    want react app alone. but it does not limited to that only.
-    <div id="footer"></div>
-    <!-- <script src="index.js"></script> -->
+    <div id="root">
+      <h1>this is ritik</h1>
+    </div>
+
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -25,14 +19,16 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
     <script>
-      //creating h1 element
-      const heading = React.createElement("h1", {}, "namaste ritik");
-      //telling the react what is root element in my app >>> making that element root
+      const heading1 = React.createElement("h1", { id: "title1" }, "heading1");
+
+      const heading2 = React.createElement("h1", { id: "title2" }, "heading2");
+
+      const container = React.createElement("div", { id: "container" }, [
+        heading1,
+        heading2,
+      ]);
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      //now passing a react lement inside my root
-      root.render(heading);
-      //react element is nothing but an object
-      console.log(heading);
+      root.render(container);
     </script>
   </body>
 </html>
